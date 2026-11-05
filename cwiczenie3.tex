@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[backend=bibtex]{biblatex}
+\newcommand{\nazwa}{tekst}
+
+\addbibresource{referencje.bib}
+
+\begin{document}
+\begin{titlepage}
+\centering
+\includegraphics[width=3cm]{logoPWr_EN_pion_czarne.jpg}
+
+\vspace{1cm}
+{\Large Politechnika Wrocławska}
+
+\vspace{0.5cm}
+Wydział Elektroniki, Fotoniki i Mikrosystemów
+
+\vspace{3cm}
+{\LARGE Laboratorium technologii informacyjnych}
+
+\vspace{0.5cm}
+Ćwiczenie nr 3
+
+\vfill
+Alesky S
+\end{titlepage}
+\tableofcontents
+\newpage
+
+\section{Rysunek}
+
+\begin{figure}[h]
+
+\centering
+
+\includegraphics[width=10cm]{wallhaven-je37wy.jpg}
+\caption{Las śćiółka}
+\label{fig:rys1}
+
+\end{figure}
+Na rysunku \ref{fig:rys1} przedstawiono las \cite{sakdaskd}
+
+\section{Tabelka}
+
+\begin{tabular}{l|c|c|r}
+
+Kot & 5 & 12 & \nazwa \\
+Pies & 3 & 222 & \ref{fig:rys1} \\
+ sad  & 2 & 222 & 3234 \\
+ 
+\end{tabular}
+\section{Równanie}
+
+\begin{equation}
+    I=I_S \left( e^{qV/nkT}-1\right)
+\end{equation}
+$I$ — prąd diody
+$I_S$ — prąd nasycenia
+$q$ — ładunek elementarny
+$V$ — napięcie na złączu
+$n$ — wspólczynnik idealności
+$k$ — stała Boltzmanna
+$T$ — temperature bezwzględną
+
+\printbibliography
+
+\end{document}
